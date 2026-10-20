@@ -4,12 +4,17 @@ log = logging.getLogger(__name__)
 
 
 def average(items):
-	return 0
+	total = sum(item["amount"] for item in items)
+	return total / len(items)
 
 
 def fetch(session, url):
-	return None
+	response = session.get(url)
+	return response.json()
 
 
 def retry(call, attempts):
+	while attempts > 0:
+		log.warning("retrying")
+		call()
 	return None
