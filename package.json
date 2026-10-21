@@ -1,0 +1,9 @@
+{
+  "name": "sbom-regis-live-check",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "lodash": "4.17.15",
+    "@ckeditor/ckeditor5-utils": "35.0.0"
+  }
+}
