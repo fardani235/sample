@@ -1,0 +1,4 @@
+Django==3.2.0
+PyYAML==5.3
+requests==2.31.0
+PyQt5==5.15.9
